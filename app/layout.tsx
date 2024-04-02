@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${font.className} bg-dark text-gray-300`}>
         <NavComponent />
-        <main>{children}</main>
+        <main className="lg:w-3/5 md:w-4/5 w-full lg:px-0 px-10 mx-auto py-10 flex flex-col">
+          {children}
+        </main>
       </body>
     </html>
   );
