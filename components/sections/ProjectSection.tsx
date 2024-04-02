@@ -18,7 +18,7 @@ export const ProjectSection = () => {
             className="flex flex-col group cursor-pointer w-full mb-10 lg:mb-0"
             key={project.title}
           >
-            <div className="w-full h-52 md:h-72 relative mb-2 overflow-hidden">
+            <div className="w-full lg:h-52 md:h-72 h-52 relative mb-2 overflow-hidden">
               <Image
                 src={project.poster}
                 alt="Project Image"
