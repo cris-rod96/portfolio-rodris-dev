@@ -3,10 +3,11 @@ import Image from "next/image";
 import profileImage from "/public/profile.jpg";
 import { social } from "@/assets/data";
 import Link from "next/link";
+import { Container } from "../ui/Container";
 
 export const HeaderSection = () => {
   return (
-    <section className="flex flex-col py-10 border-b border-gray-500/30 ">
+    <Container>
       <div className="flex items-start justify-between">
         <div className="md:w-34 md:h-34 h-24 w-24  relative md:rounded-lg rounded-full border border-white mx-auto md:mx-0">
           <Image
@@ -47,6 +48,6 @@ export const HeaderSection = () => {
           </Link>
         ))}
       </div>
-    </section>
+    </Container>
   );
 };
